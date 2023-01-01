@@ -49,14 +49,14 @@ const AddMovie = (props)=>{
 
             <div>
     
-            <label for="inputState" class="form-label">Genere</label>
-    <select id="genre" name="genre"  class="form-select" onChange={formik.handleChange} 
-    style={{width:'25%'}}  required >
-      <option defaultChecked>Choose...</option>
-      <option  value='Action'>Action</option>
-      <option  value='Drama'>Drama</option>
-      <option value='Fantasy'>Fantasy</option>
-      <option value='Anime'>Anime</option>
+            <label for="inputState" class="form-label" >Genere</label>
+    <select id="genre" name="genre" class="form-select"
+     onChange={formik.handleChange} style={{width:'25%'}} required >
+      <option value="" defaultChecked selected>choose genre..</option>
+      <option  value='Action' >Action</option>
+      <option value='Drama'>Drama</option>
+      <option value='Fantasy' >Fantasy</option>
+      <option value='Anime' >Anime</option>
       <option  value='Comedy'>Comedy</option>
     </select>
 
@@ -74,7 +74,7 @@ const AddMovie = (props)=>{
             </div>
 
             <button type="submit" className=' mt-3 btn btn-primary' 
-           >Done Done Done </button>
+           > Done </button>
 
 
         </form>

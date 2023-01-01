@@ -268,11 +268,13 @@ this.setState({movies: this.state.movies})
   
 
   handleDelete = (id) => {
-    const filterd = this.state.movies.filter((movie) => movie.id !== id);
+    const deleted = this.state.filterd.filter((movie) => movie.id !== id);
+    const deleted1 = this.state.movies.filter((movie) => movie.id !== id);
 
-   this.setState({movies: filterd });
+   this.setState({filterd: deleted });
+   this.setState({movies: deleted1 });
+
    
-   this.setState({ filterd: filterd });
    
     
    
